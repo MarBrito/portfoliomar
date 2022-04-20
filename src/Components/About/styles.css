@@ -1,0 +1,26 @@
+#About{
+    background-image: url('./../../assets/img.jpg');
+    height: calc(100vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: justify;
+    color: red;
+}
+
+
+.p {
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: justify;
+    line-height: 180%;
+}
+
+.subtitle {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: justify;
+}
