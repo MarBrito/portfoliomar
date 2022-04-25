@@ -1,24 +1,53 @@
 header {
-    background-color:rgb(76, 97, 155);
-    background-size: cover;
-    display: flex; 
-    justify-content: space-between;
-    align-items: center; 
-    height: 80px;
-    padding: 0 10px;
-    position: fixed;
-    top: 0;
-    width: 100vw;
+  background: #642b73; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c6426e,
+    #642b73
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c6426e,
+    #642b73
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 30px;
+  /* margin: 30 10px; */
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .menu {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
+  margin-right: 890px;
 }
 
 .item-menu {
-    padding: 50px;
-    font-size: 1.3rem;
-    cursor: pointer;
+  padding: 10 50px;
+  margin: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 400;
+  color: rgb(226, 229, 231);
 }
 
+.Mar {
+  border-radius: 25%;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+img {
+  border-radius: 25%;
+  padding: 10px;
+  margin-top: 10px;
+}

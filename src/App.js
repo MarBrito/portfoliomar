@@ -1,10 +1,10 @@
 import "./styles.css";
-import Header from "./Components/Header";
 import About from "./Components/About";
+import Header from "./Components/Header";
 import Home from "./Components/Home";
+// import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
-import Social from "./Components/Social";
-
+import Contacts from "./Components/Contacts";
 
 function App() {
   return (
@@ -12,10 +12,10 @@ function App() {
       <Header />
       <Home />
       <About />
+      {/* <Experience /> */}
       <Projects />
-      <Social />
+      <Contacts />
     </div>
-    
   );
 }
 

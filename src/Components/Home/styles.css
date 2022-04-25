@@ -1,4 +1,108 @@
-.Home {
-    background-color: ;
-    height: 100vh;
+main {
+  height: calc(97vh - 70px);
+  background: cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  flex-direction: row;
+  background-size: cover;
+}
+
+#Home {
+  background: #642b73; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c6426e,
+    #642b73
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c6426e,
+    #642b73
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100vh;
+}
+.container {
+  background-size: cover;
+  /* width: 500px;
+  height: 150px; */
+}
+
+.stars {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: 50px 30px white, 100px 80px white, 80px 120px white,
+    300px 20px white, 250px 130px white, 200px 50px white, 150px 100px white,
+    320px 100px white;
+}
+
+.stars2 {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white, 125px 35px white, 50px 80px white,
+    10px 120px white, 275px 90px white, 230px 10px white, 120px 130px white,
+    300px 130px white, 220px 115px white;
+  animation: anim-stars 20s linear infinite;
+}
+
+.stars::after {
+  content: " ";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: 50px 30px white, 100px 80px white, 80px 120px white,
+    300px 20px white, 250px 130px white, 200px 50px white, 150px 100px white,
+    320px 100px white;
+}
+
+.stars2::after {
+  content: " ";
+  position: absolute;
+  top: 150px;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white, 125px 35px white, 50px 80px white,
+    10px 120px white, 275px 90px white, 230px 10px white, 120px 130px white,
+    300px 130px white, 220px 115px white;
+}
+
+@keyframes anim-stars {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-150px);
+  }
+}
+
+.Texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 50px 10px 10px;
+  display: flex;
+  font-family: ;
+  text-align: center;
+}
+
+.Texto h1 {
+  padding-bottom: 50px;
+  color: beige;
+}
+
+.Texto p {
+  font-size: 18px;
+  color: rgb(211, 211, 198);
+}
+
+.Image {
+  margin: 100px;
+  padding-top: 100px;
 }

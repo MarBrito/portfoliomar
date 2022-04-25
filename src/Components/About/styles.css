@@ -1,26 +1,49 @@
-#About{
-    background-image: url('./../../assets/img.jpg');
-    height: calc(100vh);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: justify;
-    color: red;
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+
+#About {
+  background: #d9a7c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fffeed,
+    #c57caa
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fffdec,
+    #b86f9d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: calc(100vh);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  /* text-align: start; */
+  color: rgb(49, 30, 30);
 }
 
+h1 {
+  padding-bottom: 100px;
+  padding-top: 50px;
+  color: rgb(63, 63, 60);
+}
 
 .p {
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    text-align: justify;
-    line-height: 180%;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: justify;
+  line-height: 160%;
+  font-family: "Ms Madi", cursive;
+  font-size: larger;
+  color: rgb(54, 54, 54);
 }
 
 .subtitle {
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: justify;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: justify;
+  font-family: "Ms Madi", cursive;
 }
+/* background-image: url("./../../assets/img.jpg"); */
