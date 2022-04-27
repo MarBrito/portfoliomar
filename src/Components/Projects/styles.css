@@ -1,44 +1,46 @@
 .content-projects {
-  /* background-color: chartreuse; */
-  background: #d9a7c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #fffcdc,
-    #d9a7c7
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #fffcdc,
-    #d9a7c7
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #d9a7c7;
+  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);
+  background: linear-gradient(to right, #fffcdc, #d9a7c7);
 
   height: auto;
   min-height: 80vh;
 }
 
 .list-projects {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
+  align-content: space-around;
+  padding: 30px;
 }
 
 .title-project {
   text-align: center;
-  margin-bottom: 30px;
   font-weight: bold;
-  font-family: ;
-  padding-top: 100px;
+  padding: 80px;
 }
 
 .item-list-projects {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin: 30px 50px;
-  font-size: small;
+  padding: 1 rem;
+  margin-bottom: 30px;
 }
 
 .name-project {
   font-weight: 300;
 }
+
+@media (max-width: 1080px) {
+  .list-projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .list-projects {
+    grid-template-columns: 1fr;
+  }
+} ;

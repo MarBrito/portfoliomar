@@ -10,10 +10,10 @@ const data = [
   },
   {
     id: "2",
-    name: "Top 5 coding projects to put your knowledge into practice (Part 2)",
-    link: "https://programathor.com.br/blog/top-projetos-de-programacao/",
+    name: "How to implement smooth scrolling in React",
+    link: "https://www.digitalocean.com/community/tutorials/how-to-implement-smooth-scrolling-in-react-pt",
     image:
-      "https://programathor.com.br/blog/wp-content/uploads/2018/05/projetos-de-programa%C3%A7%C3%A3o-676x451.jpg",
+      "https://images.prismic.io/digitalocean/0b619d51-a723-4748-997f-39ed5697a540_intro-to-cloud.jpg?auto=compress,format",
   },
   {
     id: "3",
@@ -35,9 +35,9 @@ export default function Projects() {
       <h1 className="title-project">PROJECTS</h1>
       <ul className="list-projects">
         {data.map(({ image, name, link }) => (
-          <a href={link}>
+          <a href={link} target="_blank" rel="noreferrer noopener">
             <li className="item-list-projects">
-              <img src={image} alt="" width={200} height={200} />
+              <img src={image} alt="" width={190} height={190} />
               <h3 className="name-project">{name}</h3>
             </li>
           </a>

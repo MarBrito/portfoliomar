@@ -1,41 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ms+Madi&display=swap");
 
 #About {
-  background: #d9a7c7; /* fallback for old browsers */
+
+  background: #d9a7c7; 
   background: -webkit-linear-gradient(
     to right,
     #fffeed,
     #c57caa
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
+
   background: linear-gradient(
     to right,
     #fffdec,
     #b86f9d
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
 
-  height: calc(100vh);
+  min-height: 100vh;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 0px;
-  /* text-align: start; */
   color: rgb(49, 30, 30);
 }
 
-h1 {
-  padding-bottom: 100px;
-  padding-top: 50px;
+.about-me {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin: 50px;
   color: rgb(63, 63, 60);
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
 }
 
-.p {
+.history {
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: justify;
   line-height: 160%;
-  font-family: "Ms Madi", cursive;
-  font-size: larger;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
   color: rgb(54, 54, 54);
 }
 
@@ -44,6 +49,11 @@ h1 {
   align-items: center;
   padding: 20px;
   text-align: justify;
-  font-family: "Ms Madi", cursive;
 }
-/* background-image: url("./../../assets/img.jpg"); */
+
+@media (max-width: 768px) {
+  #About {
+    height: auto;
+    min-height: 100vh;
+  }
+}

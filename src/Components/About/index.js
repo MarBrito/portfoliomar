@@ -1,17 +1,13 @@
 import "./styles.css";
-// import logo from "../../assets/logo.webp";
 
 export default function About() {
   return (
     <main id="About">
-      {/* <img src={logo} alt="" height={60} /> */}
 
-      {/* <h2 className="subtitle">Hey, how's it going?</h2> */}
+      <div className="p">
+        <h1 className="about-me">"A little more about me..."</h1>
 
-      <p className="p">
-        <h1>"A little more about me..."</h1>
-
-        <p>
+        <p className="history">
           During the time I lived in Petrolina-PE (2000-2012), I worked as a
           Music and Singing Instructor in schools and government programs. I did
           backing and played tenor sax in musical groups. I had a group that
@@ -32,7 +28,7 @@ export default function About() {
           can find and get to know my projects. Hope you enjoy the visit and
           like the page!{" "}
         </p>
-      </p>
+      </div>
     </main>
   );
 }

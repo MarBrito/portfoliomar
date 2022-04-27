@@ -7,12 +7,8 @@ export default function Header() {
   }
 
   return (
-    <header>
+    <nav>
       <img src={borboleta4} height={60} alt="imagem site" />
-      {/* <div class="container">
-        <div class="stars"></div>
-        <div class="stars2"></div>
-      </div> */}
       <ul className="menu">
         <li className="item-menu" onClick={() => scrollToComponent("Home")}>
           HOME
@@ -20,12 +16,6 @@ export default function Header() {
         <li className="item-menu" onClick={() => scrollToComponent("About")}>
           ABOUT
         </li>
-        {/* <li
-          className="item-menu"
-          onClick={() => scrollToComponent("Experience")}
-        >
-          EXPERIENCE
-        </li> */}
         <li className="item-menu" onClick={() => scrollToComponent("projects")}>
           PROJECTS
         </li>
@@ -33,14 +23,6 @@ export default function Header() {
           CONTACTS
         </li>
       </ul>
-    </header>
+    </nav>
   );
 }
-
-// function scrollToProjects(){
-//     document.getElementById("projects").scrollIntoView();
-// }
-
-// function scrollToAbout(){
-//     document.getElementById("about").scrollIntoView();
-// }
